@@ -1,3 +1,2 @@
-FROM tomcat:8
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
-# Added to test webhook
+FROM nginx:latest
+COPY ./index.html /usr/share/nginx/html/index.html
